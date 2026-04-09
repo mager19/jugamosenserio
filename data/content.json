@@ -1,0 +1,194 @@
+{
+  "site": {
+    "name": "Jugamos en Serio",
+    "tagline": "El poder del juego, al servicio del equipo.",
+    "url": "https://jugamosenserio.com",
+    "email": "hola@jugamosenserio.com",
+    "cities": "Bogotá · Medellín · Cali"
+  },
+  "nav": {
+    "links": [
+      { "label": "Nosotros", "href": "#nosotros" },
+      { "label": "Metodología", "href": "#metodologia" },
+      { "label": "Experiencias", "href": "#experiencias" },
+      { "label": "Contacto", "href": "#contacto" }
+    ],
+    "cta": { "label": "Hablemos", "href": "#contacto" }
+  },
+  "hero": {
+    "pill": "Jugamos para pensar · Sentir · Construir",
+    "headline": "El poder del juego al servicio del equipo.",
+    "subheadline": "Diseñamos experiencias lúdicas que activan la estrategia, conectan personas y abren las conversaciones que los equipos necesitan tener.",
+    "ctas": [
+      { "label": "Cuéntanos qué necesita tu equipo", "href": "#contacto", "variant": "primary" },
+      { "label": "Ver cómo lo hacemos", "href": "#metodologia", "variant": "link" }
+    ],
+    "stats": [
+      { "value": 500, "suffix": "+", "label": "Equipos transformados" },
+      { "value": 1200, "suffix": "+", "label": "Conversaciones desbloqueadas" },
+      { "value": 50, "suffix": "+", "label": "Líderes activados" }
+    ],
+    "image": {
+      "src": "https://picsum.photos/seed/teamwork-office/900/1100",
+      "alt": "Equipo en sesión de trabajo colaborativo"
+    }
+  },
+  "quote": {
+    "text": "Descubrí que el juego no es el opuesto del trabajo — es la forma más honesta de hacerlo. Cuando alguien juega, baja la guardia. Y cuando baja la guardia, aparece la persona real detrás del cargo.",
+    "author": {
+      "name": "Jennifer Marcela García A.",
+      "role": "Fundadora de Jugamos en Serio",
+      "bio": "Jennifer lleva más de una década diseñando experiencias que mueven equipos. No desde el manual, sino desde la observación: entiende que cada grupo tiene su propio lenguaje, sus propias tensiones, y sus propias posibilidades. Usa el juego como lo que realmente es — una lente para ver con más claridad lo que está pasando, y un puente para ir a donde se necesita llegar.",
+      "image": {
+        "src": "https://picsum.photos/seed/jennifer-garcia/600/800",
+        "alt": "Jennifer Marcela García A., Fundadora de Jugamos en Serio"
+      }
+    }
+  },
+  "methodology": {
+    "eyebrow": "Cómo lo hacemos",
+    "headline": "Una metodología diseñada para transformar, no solo para entretener.",
+    "subheadline": "Cada experiencia es distinta porque cada equipo es distinto. Pero el camino siempre sigue cuatro pasos.",
+    "steps": [
+      {
+        "number": "01",
+        "icon": "Ear",
+        "title": "Escuchamos antes de proponer",
+        "description": "Nos sentamos con el equipo — no con el organigrama. Entendemos qué está pasando de verdad antes de diseñar cualquier dinámica. Nada llega prefabricado.",
+        "bg": "bg-primary",
+        "textColor": "text-white"
+      },
+      {
+        "number": "02",
+        "icon": "Lightbulb",
+        "title": "Diseñamos con un propósito claro",
+        "description": "Cada juego tiene una intención metodológica alineada a los resultados que necesitan. No es entretenimiento — es arquitectura de experiencias.",
+        "bg": "bg-tertiary",
+        "textColor": "text-neutral-900"
+      },
+      {
+        "number": "03",
+        "icon": "Users",
+        "title": "Facilitamos desde la empatía",
+        "description": "Creamos espacios donde todos se atreven a participar — el introvertido, el escéptico, el que lleva años sin hablar con su par. La facilitación es la mitad del trabajo.",
+        "bg": "bg-secondary",
+        "textColor": "text-white"
+      },
+      {
+        "number": "04",
+        "icon": "CheckCircle",
+        "title": "Cerramos con lo que sirve",
+        "description": "Lo que se descubre jugando no se queda en la cancha. Lo convertimos en acuerdos, compromisos y conversaciones concretas para la mesa de trabajo.",
+        "bg": "bg-neutral-50",
+        "textColor": "text-neutral-900"
+      }
+    ]
+  },
+  "principles": {
+    "eyebrow": "En qué creemos",
+    "headline": "Nuestros principios",
+    "items": [
+      {
+        "icon": "GameController",
+        "title": "El juego es un canal, no un fin",
+        "description": "No jugamos por jugar. Cada dinámica tiene un propósito detrás. La diversión es la puerta — lo que importa es a dónde lleva.",
+        "bg": "bg-primary",
+        "textColor": "text-white",
+        "size": "large"
+      },
+      {
+        "icon": "MagnifyingGlass",
+        "title": "Lo que pasa en el juego, refleja el trabajo",
+        "description": "Cuando un equipo juega, muestra cómo toma decisiones, cómo maneja la presión, quién lidera y quién se calla.",
+        "bg": "bg-tertiary",
+        "textColor": "text-neutral-900",
+        "size": "small"
+      },
+      {
+        "icon": "Heart",
+        "title": "Las emociones abren las puertas",
+        "description": "Las conversaciones más importantes arrancan cuando alguien se siente lo suficientemente seguro para hablar. Creamos ese espacio.",
+        "bg": "bg-secondary",
+        "textColor": "text-white",
+        "size": "small"
+      },
+      {
+        "icon": "ArrowsOut",
+        "title": "No hay cambio sin participación",
+        "description": "Una estrategia que el equipo no construyó, el equipo no la defiende. Por eso diseñamos experiencias donde todos tienen voz — no como cortesía, sino como método.",
+        "bg": "bg-neutral-800",
+        "textColor": "text-white",
+        "size": "medium"
+      }
+    ]
+  },
+  "testimonials": {
+    "eyebrow": "Lo que dicen quienes jugaron en serio",
+    "headline": "Lo que hemos vivido...",
+    "items": [
+      {
+        "rating": 5,
+        "text": "Fue increíble ver cómo personas que casi no se hablaban terminaron construyendo estrategias juntas a través de sus retos tácticos.",
+        "author": "Director de HR",
+        "company": "Multinacional Retail",
+        "size": "large"
+      },
+      {
+        "rating": 5,
+        "text": "Jugamos en Serio nos ayudó a desbloquear conversaciones que llevábamos meses evitando. El juego pudo ir a donde nosotros no habíamos podido.",
+        "author": "CTO",
+        "company": "Tech Startup, Medellín",
+        "size": "small"
+      },
+      {
+        "rating": 5,
+        "text": "La metodología es impactante. No es solo jugar — es entender para qué estamos jugando, y eso lo cambia todo.",
+        "author": "Líder de Cultura",
+        "company": "Sector Bancario",
+        "size": "medium"
+      }
+    ]
+  },
+  "stats": [
+    { "value": 500, "suffix": "+", "label": "Equipos transformados" },
+    { "value": 1200, "suffix": "+", "label": "Conversaciones desbloqueadas" },
+    { "value": 50, "suffix": "+", "label": "Líderes activados" }
+  ],
+  "contact": {
+    "eyebrow": "Hablemos",
+    "headline": "¿Listos para jugar en serio?",
+    "body": "Cuéntanos qué está pasando en tu equipo. Sin formulismos, sin propuestas genéricas. Solo una conversación para entender si podemos ayudar — y cómo.",
+    "trust": [
+      "Sin compromiso — primera conversación gratis",
+      "Respuesta en menos de 24 horas",
+      "Más de 500 equipos ya dieron el primer paso"
+    ],
+    "formspreeId": "YOUR_FORMSPREE_ID",
+    "form": {
+      "fields": [
+        { "name": "nombre", "label": "Tu nombre", "type": "text", "placeholder": "Tu nombre completo", "required": true },
+        { "name": "empresa", "label": "Empresa", "type": "text", "placeholder": "Nombre de tu organización", "required": true },
+        { "name": "email", "label": "Email", "type": "email", "placeholder": "tu@empresa.com", "required": true },
+        { "name": "mensaje", "label": "¿Qué está pasando en tu equipo?", "type": "textarea", "placeholder": "Cuéntanos qué quieren lograr, qué está costando trabajo, qué evento o momento tienen en mente...", "rows": 4 }
+      ],
+      "cta": "Enviar mensaje",
+      "success": "Recibimos tu mensaje. Alguien de nuestro equipo te escribe pronto — de verdad, no un bot."
+    }
+  },
+  "footer": {
+    "tagline": "El poder del juego, al servicio del equipo.",
+    "email": "hola@jugamosenserio.com",
+    "cities": "Bogotá · Medellín · Cali",
+    "social": [
+      { "platform": "LinkedIn", "icon": "LinkedinLogo", "href": "#" },
+      { "platform": "Instagram", "icon": "InstagramLogo", "href": "#" }
+    ],
+    "nav": [
+      { "label": "Nosotros", "href": "#nosotros" },
+      { "label": "Metodología", "href": "#metodologia" },
+      { "label": "Experiencias", "href": "#experiencias" },
+      { "label": "Contacto", "href": "#contacto" }
+    ],
+    "legal": "© 2025 Jugamos en Serio. Todos los derechos reservados."
+  }
+}

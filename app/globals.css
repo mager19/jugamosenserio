@@ -1,0 +1,74 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* Brand palette */
+  --color-primary: #1B2B6B;
+  --color-primary-dark: #122050;
+  --color-primary-light: #2D45A0;
+  --color-primary-muted: rgba(27, 43, 107, 0.08);
+
+  --color-secondary: #E8623A;
+  --color-secondary-dark: #D4522A;
+  --color-secondary-light: #F07A55;
+
+  --color-tertiary: #F5C842;
+  --color-tertiary-dark: #D9AE28;
+  --color-tertiary-light: #FAD96A;
+
+  /* Neutral scale */
+  --color-neutral-50: #FDFCFB;
+  --color-neutral-100: #F5F3F0;
+  --color-neutral-200: #E8E4DE;
+  --color-neutral-300: #D1CBC1;
+  --color-neutral-400: #A89F92;
+  --color-neutral-500: #7A7168;
+  --color-neutral-600: #5A5249;
+  --color-neutral-700: #3D3830;
+  --color-neutral-800: #2A2520;
+  --color-neutral-900: #1A1A18;
+
+  --color-bg: var(--color-neutral-50);
+  --color-surface: #FFFFFF;
+
+  /* Section padding */
+  --section-py: clamp(4rem, 8vw, 8rem);
+  --section-px: clamp(1.5rem, 4vw, 2.5rem);
+
+  /* Font */
+  --font-plus-jakarta-sans: 'Plus Jakarta Sans', system-ui, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--color-bg);
+  color: var(--color-neutral-900);
+  font-family: var(--font-plus-jakarta-sans);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Hide scrollbar for testimonials */
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+/* Marquee pause on hover */
+.marquee-track:hover .animate-marquee,
+.marquee-track:hover .animate-marquee-reverse {
+  animation-play-state: paused;
+}

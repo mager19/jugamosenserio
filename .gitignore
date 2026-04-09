@@ -1,0 +1,33 @@
+# ── Dependencies ──────────────────────────────────────────────────────────────
+node_modules/
+remotion/node_modules/
+
+# ── Next.js ───────────────────────────────────────────────────────────────────
+.next/
+out/
+
+# ── Remotion ──────────────────────────────────────────────────────────────────
+# Cache de Chromium descargado por Remotion (>80MB)
+remotion/.remotion/
+# Videos renderizados — se generan con `npm run render`
+# (comentar esta línea si querés commitear el MP4 generado)
+# public/videos/
+
+# ── Env ───────────────────────────────────────────────────────────────────────
+.env
+.env.local
+.env.*.local
+
+# ── OS / Editor ───────────────────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# ── Logs ──────────────────────────────────────────────────────────────────────
+*.log
+npm-debug.log*
+
+# ── Build / misc ──────────────────────────────────────────────────────────────
+.vercel
+*.tsbuildinfo
