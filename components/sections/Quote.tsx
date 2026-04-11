@@ -22,15 +22,31 @@ export function Quote() {
             src={quote.author.image.src}
             alt={quote.author.image.alt}
             fill
-            className="object-cover object-top"
-            style={{ filter: "grayscale(15%)" }}
+            className="object-cover object-[center_15%]"
+            style={{ filter: "grayscale(40%) brightness(0.9)" }}
             sizes="45vw"
           />
-          {/* Overlay diagonal derecho */}
+          {/* Tinte azul duotone */}
           <div
             className="absolute inset-0 pointer-events-none"
             style={{
-              background: "linear-gradient(to right, transparent 55%, #1B2B6B 100%)",
+              background: "#1B2B6B",
+              mixBlendMode: "color",
+              opacity: 0.35,
+            }}
+          />
+          {/* Fade lateral hacia el texto */}
+          <div
+            className="absolute inset-0 pointer-events-none"
+            style={{
+              background: "linear-gradient(to right, transparent 45%, #1B2B6B 95%)",
+            }}
+          />
+          {/* Fade inferior para anclar */}
+          <div
+            className="absolute inset-0 pointer-events-none"
+            style={{
+              background: "linear-gradient(to top, #1B2B6B 0%, transparent 35%)",
             }}
           />
           {/* Badge nombre */}

@@ -78,9 +78,12 @@ export function Nav() {
       >
         <div className="max-w-7xl mx-auto px-6 flex items-center justify-between">
           {/* Logo */}
-          <a href="/" className="font-extrabold text-xl text-primary tracking-tight leading-none">
-            Jugamos<br />
-            <span className="text-secondary">en Serio</span>
+          <a href="/" className="shrink-0">
+            <img
+              src="/Logo JES.svg"
+              alt="Jugamos en Serio"
+              className="h-20 w-auto"
+            />
           </a>
 
           {/* Desktop nav links */}

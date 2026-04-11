@@ -10,9 +10,12 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-[2fr_1fr_1fr] gap-12 mb-12">
           {/* Col 1: Brand */}
           <div>
-            <div className="font-extrabold text-2xl text-white tracking-tight leading-none mb-3">
-              Jugamos<br />
-              <span className="text-tertiary">en Serio</span>
+            <div className="mb-3">
+              <img
+                src="/Logo JES.svg"
+                alt="Jugamos en Serio"
+                className="h-12 w-auto"
+              />
             </div>
             <p className="text-neutral-400 text-sm max-w-xs mt-3 leading-relaxed">
               {footer.tagline}
