@@ -1,4 +1,4 @@
-import { LinkedinLogo, InstagramLogo, EnvelopeSimple, MapPin } from "@phosphor-icons/react/dist/ssr";
+import { LinkedinLogo, MapPin } from "@phosphor-icons/react/dist/ssr";
 import content from "@/data/content.json";
 
 export function Footer() {
@@ -21,12 +21,6 @@ export function Footer() {
               {footer.tagline}
             </p>
             <div className="flex items-center gap-2 mt-4 text-neutral-400 text-sm">
-              <EnvelopeSimple size={16} />
-              <a href={`mailto:${footer.email}`} className="hover:text-white transition-colors">
-                {footer.email}
-              </a>
-            </div>
-            <div className="flex items-center gap-2 mt-2 text-neutral-400 text-sm">
               <MapPin size={16} />
               <span>{footer.cities}</span>
             </div>
@@ -36,13 +30,11 @@ export function Footer() {
                   key={s.platform}
                   href={s.href}
                   aria-label={s.platform}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="text-neutral-400 hover:text-tertiary transition-colors"
                 >
-                  {s.platform === "LinkedIn" ? (
-                    <LinkedinLogo size={22} weight="fill" />
-                  ) : (
-                    <InstagramLogo size={22} weight="fill" />
-                  )}
+                  <LinkedinLogo size={22} weight="fill" />
                 </a>
               ))}
             </div>
@@ -77,12 +69,6 @@ export function Footer() {
                 className="text-sm text-neutral-300 hover:text-white transition-colors"
               >
                 Agendar una conversación
-              </a>
-              <a
-                href={`mailto:${footer.email}`}
-                className="text-sm text-neutral-300 hover:text-white transition-colors"
-              >
-                Escribirnos directamente
               </a>
             </div>
           </div>

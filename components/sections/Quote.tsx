@@ -87,7 +87,7 @@ export function Quote() {
 
           <motion.p
             variants={fadeUp}
-            className="text-blue-200/70 text-sm leading-relaxed mt-6 max-w-md"
+            className="text-blue-200/70 text-sm leading-relaxed mt-6"
           >
             {quote.author.bio}
           </motion.p>

@@ -1,35 +1,20 @@
 "use client";
-import { useRef } from "react";
-import { motion, useScroll, useMotionValueEvent } from "framer-motion";
+import { motion } from "framer-motion";
 import { ArrowRight } from "@phosphor-icons/react";
 import { MagneticButton } from "@/components/ui/MagneticButton";
+import { SliderPuzzle } from "@/components/ui/SliderPuzzle";
 import { staggerContainer, fadeUp } from "@/lib/animations";
 import content from "@/data/content.json";
 
 export function Hero() {
   const { hero } = content;
-  const sectionRef = useRef<HTMLElement>(null);
-  const videoRef = useRef<HTMLVideoElement>(null);
-
-  // Scrubea el video mientras el hero está visible en pantalla
-  const { scrollYProgress } = useScroll({
-    target: sectionRef,
-    offset: ["start start", "end start"],
-  });
-
-  useMotionValueEvent(scrollYProgress, "change", (progress) => {
-    const vid = videoRef.current;
-    if (!vid || !vid.duration) return;
-    vid.currentTime = progress * vid.duration;
-  });
 
   return (
     <section
-      ref={sectionRef}
       id="nosotros"
       className="min-h-[100dvh] bg-[#FDFCFB] overflow-hidden"
     >
-      <div className="max-w-[1440px] mx-auto grid md:grid-cols-[55fr_45fr] min-h-[100dvh]">
+      <div className="max-w-[1440px] mx-auto grid grid-cols-1 md:grid-cols-[55fr_45fr] min-h-[100dvh]">
 
         {/* ── Columna izquierda ── */}
         <motion.div
@@ -37,7 +22,7 @@ export function Hero() {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.01 }}
-          className="flex flex-col justify-center px-6 md:pl-16 md:pr-8 pt-28 pb-16 md:py-0"
+          className="flex flex-col justify-center px-6 md:pl-16 md:pr-8 pt-24 pb-6 md:py-0"
         >
           <motion.span
             variants={fadeUp}
@@ -80,16 +65,9 @@ export function Hero() {
           </motion.div>
         </motion.div>
 
-        {/* ── Columna derecha — Puzzle animado con scroll ── */}
-        <div className="relative hidden md:block overflow-hidden">
-          <video
-            ref={videoRef}
-            src="/videos/slider-puzzle.mp4"
-            muted
-            playsInline
-            preload="auto"
-            className="absolute inset-0 w-full h-full object-cover scale-[0.85]"
-          />
+        {/* ── Columna derecha — Puzzle interactivo ── */}
+        <div className="flex items-center justify-center px-6 md:px-12 pb-12 md:py-0">
+          <SliderPuzzle />
         </div>
 
       </div>

@@ -127,43 +127,61 @@
     "headline": "Lo que hemos vivido...",
     "items": [
       {
-        "rating": 5,
-        "text": "Fue increíble ver cómo personas que casi no se hablaban terminaron construyendo estrategias juntas a través de sus retos tácticos.",
-        "author": "Director de HR",
-        "company": "Multinacional Retail",
-        "size": "large"
+        "title": "Transformar una reunión en una experiencia inolvidable",
+        "description": "En un centro de distribución, transformamos una reunión estratégica tradicional en una jornada gamificada. Mediante rompecabezas, dinámicas colaborativas y juegos adaptados, el equipo logró comprender mejor los proyectos clave del año, identificar sus retos y concretar ideas y compromisos reales.",
+        "quote": "Fue una recarga de energía. Ojalá sigamos haciendo las reuniones así.",
+        "author": "Santiago Agudelo",
+        "role": "Participante"
       },
       {
-        "rating": 5,
-        "text": "Jugamos en Serio nos ayudó a desbloquear conversaciones que llevábamos meses evitando. El juego pudo ir a donde nosotros no habíamos podido.",
-        "author": "CTO",
-        "company": "Tech Startup, Medellín",
-        "size": "small"
+        "title": "De la emoción al liderazgo auténtico",
+        "description": "Inspirado por la experiencia, uno de los participantes replicó voluntariamente la metodología con su propio equipo, generando alto impacto y conexión. Esta iniciativa demostró el poder multiplicador del juego bien aplicado.",
+        "quote": "Lo que hicimos en esa jornada me confirmó que liderar también es abrir espacio para jugar con propósito.",
+        "author": "Simon Algarra",
+        "role": "Líder participante"
       },
       {
-        "rating": 5,
-        "text": "La metodología es impactante. No es solo jugar — es entender para qué estamos jugando, y eso lo cambia todo.",
-        "author": "Líder de Cultura",
-        "company": "Sector Bancario",
-        "size": "medium"
+        "title": "Perspectiva desde gestión humana",
+        "description": "El área de gestión humana resaltó el valor del proceso por su efectividad para unir equipos diversos, despertar la creatividad y fortalecer el compromiso hacia un propósito compartido.",
+        "quote": "Trabajar con un equipo tan diverso y apasionado resultó extraordinariamente enriquecedor. La creatividad, la colaboración y la conexión con una misión compartida hicieron que este proceso fuera verdaderamente especial.",
+        "author": "Milena Rodriguez",
+        "role": "Gestión Humana"
+      },
+      {
+        "title": "Estrategia vivida y compartida",
+        "description": "Los miembros del equipo expresaron que, por primera vez, sintieron que la estrategia no se presentó \"desde arriba\", sino que se construyó en conjunto.",
+        "quote": "Hoy entendemos para qué hacemos lo que hacemos. No nos contaron, lo vivimos.",
+        "author": "Participantes",
+        "role": "Equipo de líderes"
       }
     ]
   },
   "stats": [
-    { "value": 500, "suffix": "+", "label": "Equipos transformados" },
-    { "value": 1200, "suffix": "+", "label": "Conversaciones desbloqueadas" },
-    { "value": 50, "suffix": "+", "label": "Líderes activados" }
+    "Juegos",
+    "Puzzles",
+    "Rompecabezas",
+    "Acertijos",
+    "Escape Rooms",
+    "Cartas",
+    "Conexión de equipos",
+    "Cubos",
+    "Legos",
+    "Dados",
+    "Control remoto",
+    "Dinámicas grupales",
+    "Rol en juego",
+    "Storytelling",
+    "Simulaciones",
+    "Laberintos",
+    "Fichas",
+    "Estrategia"
   ],
   "contact": {
     "eyebrow": "Hablemos",
     "headline": "¿Listos para jugar en serio?",
-    "body": "Cuéntanos qué está pasando en tu equipo. Sin formulismos, sin propuestas genéricas. Solo una conversación para entender si podemos ayudar — y cómo.",
-    "trust": [
-      "Sin compromiso — primera conversación gratis",
-      "Respuesta en menos de 24 horas",
-      "Más de 500 equipos ya dieron el primer paso"
-    ],
-    "formspreeId": "YOUR_FORMSPREE_ID",
+    "body": "Una conversación para conocerte, no para convencerte. Primero entendemos qué necesita tu equipo — el resto se da solo.",
+    "trust": [],
+    "formspreeId": "xeevenvy",
     "form": {
       "fields": [
         { "name": "nombre", "label": "Tu nombre", "type": "text", "placeholder": "Tu nombre completo", "required": true },
@@ -180,8 +198,7 @@
     "email": "hola@jugamosenserio.com",
     "cities": "Bogotá · Medellín · Cali",
     "social": [
-      { "platform": "LinkedIn", "icon": "LinkedinLogo", "href": "#" },
-      { "platform": "Instagram", "icon": "InstagramLogo", "href": "#" }
+      { "platform": "LinkedIn", "icon": "LinkedinLogo", "href": "https://www.linkedin.com/in/jenn7010" }
     ],
     "nav": [
       { "label": "Nosotros", "href": "#nosotros" },

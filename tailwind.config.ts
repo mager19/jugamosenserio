@@ -25,8 +25,8 @@ const config: Config = {
         },
       },
       animation: {
-        marquee: "marquee 20s linear infinite",
-        "marquee-reverse": "marquee 28s linear infinite reverse",
+        marquee: "marquee 80s linear infinite",
+        "marquee-reverse": "marquee 110s linear infinite reverse",
       },
       keyframes: {
         marquee: {

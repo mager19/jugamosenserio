@@ -1,7 +1,7 @@
 "use client";
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { CheckCircle, ArrowRight, EnvelopeSimple, MapPin, Target } from "@phosphor-icons/react";
+import { CheckCircle, ArrowRight, MapPin, Target } from "@phosphor-icons/react";
 import { MagneticButton } from "@/components/ui/MagneticButton";
 import { staggerContainer, fadeUp } from "@/lib/animations";
 import content from "@/data/content.json";
@@ -68,22 +68,18 @@ export function Contact() {
             </motion.p>
 
             {/* Trust items */}
-            <motion.div variants={staggerContainer} className="flex flex-col gap-4 mb-10">
-              {contact.trust.map((item, i) => (
-                <motion.div key={i} variants={fadeUp} className="flex items-center gap-3">
-                  <CheckCircle size={22} weight="fill" className="text-tertiary shrink-0" />
-                  <span className="text-white text-sm">{item}</span>
-                </motion.div>
-              ))}
-            </motion.div>
+            {contact.trust.length > 0 && (
+              <motion.div variants={staggerContainer} className="flex flex-col gap-4 mb-10">
+                {contact.trust.map((item, i) => (
+                  <motion.div key={i} variants={fadeUp} className="flex items-center gap-3">
+                    <CheckCircle size={22} weight="fill" className="text-tertiary shrink-0" />
+                    <span className="text-white text-sm">{item}</span>
+                  </motion.div>
+                ))}
+              </motion.div>
+            )}
 
             <motion.div variants={fadeUp} className="flex flex-col gap-2 text-sm text-blue-300">
-              <div className="flex items-center gap-2">
-                <EnvelopeSimple size={16} />
-                <a href={`mailto:${site.email}`} className="hover:text-white transition-colors">
-                  {site.email}
-                </a>
-              </div>
               <div className="flex items-center gap-2">
                 <MapPin size={16} />
                 <span>{site.cities}</span>
