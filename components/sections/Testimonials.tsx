@@ -10,6 +10,7 @@ const photoColumns: { src: string; alt: string; ratio: string }[][] = [
   [
     { src: "/images/IMG_9734.jpeg", alt: "Concentración en el juego", ratio: "3/4" },
     { src: "/images/3D401789-F382-404A-B440-695DFD447185_1_102_o.jpeg", alt: "Dinámica con tangram", ratio: "4/5" },
+    { src: "/images/IMG_2093.jpeg", alt: "Equipo en pausa activa", ratio: "3/4" },
   ],
   // columna doble ancho — landscape
   [
@@ -19,7 +20,8 @@ const photoColumns: { src: string; alt: string; ratio: string }[][] = [
   // columna flex-1
   [
     { src: "/images/D0A361E3-AD54-4002-A1B6-60665B23C6AB_1_102_o.jpeg", alt: "Participante con venda en los ojos", ratio: "4/5" },
-    { src: "/images/51ADF3B9-3B2E-4496-8BB2-1A43AA3357D8_1_102_o.jpeg", alt: "Equipo resolviendo puzzle", ratio: "3/4" },
+    { src: "/images/IMG_2085.jpeg", alt: "Dinámica con globos", ratio: "3/4" },
+    { src: "/images/51ADF3B9-3B2E-4496-8BB2-1A43AA3357D8_1_102_o.jpeg", alt: "Equipo resolviendo puzzle", ratio: "4/5" },
   ],
   // columna doble ancho — landscape
   [
@@ -29,7 +31,8 @@ const photoColumns: { src: string; alt: string; ratio: string }[][] = [
   // columna flex-1
   [
     { src: "/images/IMG_9731.jpeg", alt: "Jugando con canicas", ratio: "3/4" },
-    { src: "/images/IMG_0625.jpeg", alt: "Juego de escape room", ratio: "4/5" },
+    { src: "/images/IMG_2088.jpeg", alt: "Detalle globos y carrito", ratio: "4/5" },
+    { src: "/images/IMG_0625.jpeg", alt: "Juego de escape room", ratio: "3/4" },
   ],
 ];
 
