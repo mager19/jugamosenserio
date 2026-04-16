@@ -9,7 +9,7 @@ import content from "@/data/content.json";
 export function Contact() {
   const { contact, site } = content;
   const [status, setStatus] = useState<"idle" | "loading" | "success" | "error">("idle");
-  const [form, setForm] = useState({ nombre: "", empresa: "", email: "", mensaje: "" });
+  const [form, setForm] = useState({ nombre: "", empresa: "", email: "", telefono: "", mensaje: "" });
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     setForm((prev) => ({ ...prev, [e.target.name]: e.target.value }));
@@ -26,7 +26,7 @@ export function Contact() {
       });
       if (res.ok) {
         setStatus("success");
-        setForm({ nombre: "", empresa: "", email: "", mensaje: "" });
+        setForm({ nombre: "", empresa: "", email: "", telefono: "", mensaje: "" });
       } else {
         setStatus("error");
       }
