@@ -6,30 +6,30 @@ import { fadeUp, staggerContainer } from "@/lib/animations";
 import content from "@/data/content.json";
 
 const photoColumns: { src: string; alt: string; ratio: string }[][] = [
-  // columna flex-1 — portrait
+  // columna flex-1
   [
-    { src: "/images/3D401789-F382-404A-B440-695DFD447185_1_102_o.jpeg", alt: "Dinámica con tangram", ratio: "3/4" },
-    { src: "/images/IMG_9731.jpeg", alt: "Jugando con canicas", ratio: "3/4" },
-  ],
-  // columna doble ancho — landscape
-  [
-    { src: "/images/20250221_084455.jpeg", alt: "Equipo en sesión grupal", ratio: "4/3" },
-    { src: "/images/F2A8B2CD-3B68-4B25-9B07-4A3C9B58704C_1_102_o.jpeg", alt: "Equipo jugando con diademas", ratio: "4/3" },
-  ],
-  // columna flex-1 — portrait
-  [
-    { src: "/images/51ADF3B9-3B2E-4496-8BB2-1A43AA3357D8_1_102_o.jpeg", alt: "Equipo resolviendo puzzle", ratio: "3/4" },
-    { src: "/images/D0A361E3-AD54-4002-A1B6-60665B23C6AB_1_102_o.jpeg", alt: "Participante con venda en los ojos", ratio: "3/4" },
+    { src: "/images/IMG_9734.jpeg", alt: "Concentración en el juego", ratio: "3/4" },
+    { src: "/images/3D401789-F382-404A-B440-695DFD447185_1_102_o.jpeg", alt: "Dinámica con tangram", ratio: "4/5" },
   ],
   // columna doble ancho — landscape
   [
     { src: "/images/7CDCD7DD-56C4-4959-8D86-598842F7D4BA_4_5005_c.jpeg", alt: "Equipo representado en Lego", ratio: "16/9" },
+    { src: "/images/20250221_084455.jpeg", alt: "Equipo en sesión grupal", ratio: "4/3" },
+  ],
+  // columna flex-1
+  [
+    { src: "/images/D0A361E3-AD54-4002-A1B6-60665B23C6AB_1_102_o.jpeg", alt: "Participante con venda en los ojos", ratio: "4/5" },
+    { src: "/images/51ADF3B9-3B2E-4496-8BB2-1A43AA3357D8_1_102_o.jpeg", alt: "Equipo resolviendo puzzle", ratio: "3/4" },
+  ],
+  // columna doble ancho — landscape
+  [
+    { src: "/images/F2A8B2CD-3B68-4B25-9B07-4A3C9B58704C_1_102_o.jpeg", alt: "Equipo jugando con diademas", ratio: "4/3" },
     { src: "/images/hibdc36ddve9tbirzw8r.jpeg", alt: "Figuras de plastilina", ratio: "16/9" },
   ],
-  // columna flex-1 — portrait
+  // columna flex-1
   [
-    { src: "/images/IMG_0625.jpeg", alt: "Juego de escape room", ratio: "3/4" },
-    { src: "/images/IMG_9734.jpeg", alt: "Concentración en el juego", ratio: "3/4" },
+    { src: "/images/IMG_9731.jpeg", alt: "Jugando con canicas", ratio: "3/4" },
+    { src: "/images/IMG_0625.jpeg", alt: "Juego de escape room", ratio: "4/5" },
   ],
 ];
 
