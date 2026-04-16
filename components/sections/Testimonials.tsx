@@ -5,20 +5,40 @@ import { ArrowUpRight, Trophy } from "@phosphor-icons/react";
 import { fadeUp, staggerContainer } from "@/lib/animations";
 import content from "@/data/content.json";
 
-const photos: { src: string; alt: string; ratio: string; span?: number }[] = [
-  { src: "/images/IMG_9734.jpeg",                                          alt: "Concentración en el juego",          ratio: "3/4" },
-  { src: "/images/7CDCD7DD-56C4-4959-8D86-598842F7D4BA_4_5005_c.jpeg",   alt: "Equipo representado en Lego",        ratio: "3/2", span: 2 },
-  { src: "/images/F2A8B2CD-3B68-4B25-9B07-4A3C9B58704C_1_102_o.jpeg",   alt: "Equipo jugando con diademas",        ratio: "3/4" },
-  { src: "/images/3D401789-F382-404A-B440-695DFD447185_1_102_o.jpeg",    alt: "Dinámica con tangram",               ratio: "3/4" },
-  { src: "/images/D0A361E3-AD54-4002-A1B6-60665B23C6AB_1_102_o.jpeg",   alt: "Participante con venda en los ojos", ratio: "3/4" },
-  { src: "/images/IMG_2085.jpeg",                                          alt: "Dinámica con globos",                ratio: "3/4" },
-  { src: "/images/IMG_9731.jpeg",                                          alt: "Jugando con canicas",               ratio: "3/4" },
-  { src: "/images/20250221_084455.jpeg",                                   alt: "Equipo en sesión grupal",            ratio: "3/2", span: 2 },
-  { src: "/images/51ADF3B9-3B2E-4496-8BB2-1A43AA3357D8_1_102_o.jpeg",   alt: "Equipo resolviendo puzzle",          ratio: "3/4" },
-  { src: "/images/IMG_2093.jpeg",                                          alt: "Equipo en pausa activa",             ratio: "3/4" },
-  { src: "/images/IMG_0625.jpeg",                                          alt: "Juego de escape room",               ratio: "3/4" },
-  { src: "/images/IMG_2088.jpeg",                                          alt: "Detalle globos y carrito",           ratio: "3/4" },
-  { src: "/images/hibdc36ddve9tbirzw8r.jpeg",                              alt: "Figuras de plastilina",              ratio: "3/2", span: 2 },
+// Columnas 1/3/5: flex-1 con 3 fotos portrait (3/4) → altura total ≈ 4× ancho
+// Columnas 2/4: flex-[2] con 2 fotos cuadradas (1/1) → altura total ≈ 4× ancho  ← alturas equilibradas
+const photoColumns: { src: string; alt: string; ratio: string }[][] = [
+  [
+    { src: "/images/IMG_9734.jpeg",                                        alt: "Concentración en el juego",          ratio: "3/4" },
+    { src: "/images/3D401789-F382-404A-B440-695DFD447185_1_102_o.jpeg",  alt: "Dinámica con tangram",               ratio: "3/4" },
+    { src: "/images/IMG_2093.jpeg",                                        alt: "Equipo en pausa activa",             ratio: "3/4" },
+  ],
+  [
+    { src: "/images/7CDCD7DD-56C4-4959-8D86-598842F7D4BA_4_5005_c.jpeg", alt: "Equipo representado en Lego",        ratio: "1/1" },
+    { src: "/images/20250221_084455.jpeg",                                 alt: "Equipo en sesión grupal",            ratio: "1/1" },
+  ],
+  [
+    { src: "/images/D0A361E3-AD54-4002-A1B6-60665B23C6AB_1_102_o.jpeg",  alt: "Participante con venda en los ojos", ratio: "3/4" },
+    { src: "/images/IMG_2085.jpeg",                                        alt: "Dinámica con globos",                ratio: "3/4" },
+    { src: "/images/51ADF3B9-3B2E-4496-8BB2-1A43AA3357D8_1_102_o.jpeg",  alt: "Equipo resolviendo puzzle",          ratio: "3/4" },
+  ],
+  [
+    { src: "/images/F2A8B2CD-3B68-4B25-9B07-4A3C9B58704C_1_102_o.jpeg",  alt: "Equipo jugando con diademas",        ratio: "1/1" },
+    { src: "/images/hibdc36ddve9tbirzw8r.jpeg",                            alt: "Figuras de plastilina",              ratio: "1/1" },
+  ],
+  [
+    { src: "/images/IMG_9731.jpeg",                                        alt: "Jugando con canicas",                ratio: "3/4" },
+    { src: "/images/IMG_2088.jpeg",                                        alt: "Detalle globos y carrito",           ratio: "3/4" },
+    { src: "/images/IMG_0625.jpeg",                                        alt: "Juego de escape room",               ratio: "3/4" },
+  ],
+];
+
+const colConfig = [
+  { duration: 5.5, delay: 0,   offsetClass: "mt-12", flexClass: "flex-1"   },
+  { duration: 4.6, delay: 0.9, offsetClass: "mt-0",  flexClass: "flex-[2]" },
+  { duration: 6.2, delay: 0.4, offsetClass: "mt-8",  flexClass: "flex-1"   },
+  { duration: 5.0, delay: 1.2, offsetClass: "mt-0",  flexClass: "flex-[2]" },
+  { duration: 5.8, delay: 0.6, offsetClass: "mt-12", flexClass: "flex-1"   },
 ];
 
 export function Testimonials() {
@@ -111,26 +131,34 @@ export function Testimonials() {
             El juego en acción
           </h3>
 
-          <div className="grid grid-cols-4 gap-3 md:gap-4">
-            {photos.map((img, i) => (
-              <motion.div
-                key={i}
-                initial={{ opacity: 0, y: 16 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.4, delay: i * 0.05 }}
-                className={`relative overflow-hidden rounded-2xl md:rounded-3xl${img.span === 2 ? " col-span-2" : ""}`}
-                style={{ aspectRatio: img.ratio }}
-              >
-                <Image
-                  src={img.src}
-                  alt={img.alt}
-                  fill
-                  className="object-cover"
-                  sizes={img.span === 2 ? "(max-width: 768px) 50vw, 35vw" : "(max-width: 768px) 25vw, 18vw"}
-                />
-              </motion.div>
-            ))}
+          <div className="flex gap-3 md:gap-4 overflow-hidden">
+            {photoColumns.map((col, colIdx) => {
+              const cfg = colConfig[colIdx];
+              return (
+                <motion.div
+                  key={colIdx}
+                  className={`flex flex-col gap-3 md:gap-4 ${cfg.flexClass} ${cfg.offsetClass}`}
+                  animate={{ y: [0, -10, 0] }}
+                  transition={{ repeat: Infinity, duration: cfg.duration, delay: cfg.delay, ease: "easeInOut" }}
+                >
+                  {col.map((img, imgIdx) => (
+                    <div
+                      key={imgIdx}
+                      className="relative w-full overflow-hidden rounded-2xl md:rounded-3xl"
+                      style={{ aspectRatio: img.ratio }}
+                    >
+                      <Image
+                        src={img.src}
+                        alt={img.alt}
+                        fill
+                        className="object-cover"
+                        sizes="(max-width: 768px) 20vw, 240px"
+                      />
+                    </div>
+                  ))}
+                </motion.div>
+              );
+            })}
           </div>
         </motion.div>
 
